@@ -14,6 +14,7 @@ public class ProjectService {
     @Autowired
     private ProjectRepository projectRepository;
 
+    //Used for creating projects
     public Project saveOrUpdate(Project project){
         try{
             project.setProjectIdentifier(project.getProjectIdentifier().toUpperCase(Locale.ROOT));
@@ -24,6 +25,7 @@ public class ProjectService {
         }
     }
 
+    //Used for finding projects by ID
     public Project findProjectByIdentifier(String projectId){
         Project project = projectRepository.findByProjectIdentifier(projectId.toUpperCase());
         if(project == null){
@@ -32,10 +34,12 @@ public class ProjectService {
         return project;
     }
 
+    //Used for finding all projects
     public Iterable<Project> findAllProjects(){
         return projectRepository.findAll();
     }
 
+    //Used to delete objects
     public void deleteProjectByIdentifier(String projectId){
         Project project = findProjectByIdentifier(projectId.toUpperCase(Locale.ROOT));
         if(project == null){

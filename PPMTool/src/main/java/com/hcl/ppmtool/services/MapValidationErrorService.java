@@ -10,6 +10,7 @@ import java.awt.image.RescaleOp;
 import java.util.HashMap;
 import java.util.Map;
 
+//Returns a map of all errors
 @Service
 public class MapValidationErrorService {
     public ResponseEntity<?> MapValidationService(BindingResult result){

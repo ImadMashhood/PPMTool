@@ -7,6 +7,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
+//This essentially is the object of projects and is the Domain from which all project data is derived from
 @Entity
 public class Project {
     @Id

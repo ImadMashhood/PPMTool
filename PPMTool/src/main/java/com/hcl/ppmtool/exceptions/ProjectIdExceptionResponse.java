@@ -11,6 +11,7 @@ public class ProjectIdExceptionResponse {
         this.projectIdentifier = projectIdentifier;
     }
 
+    //Gets the project ID
     public ProjectIdExceptionResponse(String projectIdentifier) {
         this.projectIdentifier = projectIdentifier;
     }

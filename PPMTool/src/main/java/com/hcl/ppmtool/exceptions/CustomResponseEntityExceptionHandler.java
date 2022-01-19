@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+//Sends the message out with the exception
 @RestController
 @ControllerAdvice
 public class CustomResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
