@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Nav, NavMenu, DashBtn, DashBtnLink } from "../Layout/HeaderElements";
 
 class ProjectItem extends Component {
   render() {
@@ -13,21 +14,11 @@ class ProjectItem extends Component {
               <h3>Spring / React Project</h3>
               <p>Project to create a Kanban Board with Spring Boot and React</p>
             </div>
-            <div className="col-md-4 d-none d-lg-block">
-              <ul className="list-group">
-                <a href="#">
-                  <li className="list-group-item board">Project Board</li>
-                </a>
-                <a href="#">
-                  <li className="list-group-item update">
-                    Update Project Info
-                  </li>
-                </a>
-                <a href="#">
-                  <li className="list-group-item delete">Delete Project</li>
-                </a>
-              </ul>
-            </div>
+          </div>
+          <div className="dash-board-button">
+            <DashBtnLink to="/projectBoard">Project Board</DashBtnLink>
+            <DashBtnLink to="/updateBoard">Update Project</DashBtnLink>
+            <DashBtnLink to="/updateBoard">Delete Project</DashBtnLink>
           </div>
         </div>
       </div>

@@ -22,6 +22,9 @@ export const NavLink = styled(Link)`
   &.active {
     color: #ed3b4b;
   }
+  &.hover {
+    color: #ed3b4b;
+  }
 `;
 
 export const NavImg = styled(Link)`
@@ -83,6 +86,33 @@ export const NavBtnLink = styled(Link)`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   margin-left: 24px;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #4c3b92;
+    color: #fff;
+  }
+`;
+
+export const DashBtn = styled.nav`
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const DashBtnLink = styled(Link)`
+  border-radius: 4px;
+  background: #ed3b4b;
+  text-decoration: none;
+  padding: 10px 22px;
+  margin-left: 30px;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #4c3b92;
