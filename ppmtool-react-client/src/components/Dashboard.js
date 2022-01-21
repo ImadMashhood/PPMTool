@@ -1,27 +1,27 @@
-import React, { Component } from 'react';
-import ProjectItem from './Project/ProjectItem';
-import "bootstrap/dist/css/bootstrap.min.css"
-import { CreateProjectBtn } from './Layout/DashboardElements';
+import React, { Component } from "react";
+import ProjectItem from "./Project/ProjectItem";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { CreateProjectBtn } from "./Layout/DashboardElements";
 
 class Dashboard extends Component {
   render() {
-    return(
+    return (
       <div className="projects">
         <div className="container">
           <div className="row">
-              <div className="col-md-12">
-                  <h1 className="display-4 text-center">Projects</h1>
-                  <br />
-                  <CreateProjectBtn to='/'>Create Project</CreateProjectBtn>
-                  <br />
-                  <hr/>
-                  <ProjectItem/>
-              </div>
+            <div className="col-md-12">
+              <h1 className="display-4 text-center">Projects</h1>
+              <CreateProjectBtn to="/addProject">
+                Create Project
+              </CreateProjectBtn>
+              <hr style={{ color: "#fff" }} />
+              <ProjectItem />
+            </div>
           </div>
         </div>
       </div>
     );
   }
-} 
+}
 
 export default Dashboard;
