@@ -280,5 +280,5 @@ img {
   position: relative;
   transition: all 0.35s;
   outline: none;
-  color: #ed3b4b;
+  background-color: #ed3b4b;
 }

@@ -21,13 +21,13 @@ class Header extends Component {
           </NavImg>
           <Bars />
           <NavMenu>
-            <NavLink to="/dashboard" activeStyle>
+            <NavLink to="/dashboard" activestyle>
               Dashboard
             </NavLink>
-            <NavLink to="/services" activeStyle>
+            <NavLink to="/services" activestyle>
               About Us
             </NavLink>
-            <NavLink to="/contact-us" activeStyle>
+            <NavLink to="/contact-us" activestyle>
               Sign Up
             </NavLink>
             <NavBtnLink to="/signin">Sign In</NavBtnLink>
