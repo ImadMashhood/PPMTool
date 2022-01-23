@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+html {
+  overflow-y: overlay;
+}
+
 img {
   width: 100%;
 }
@@ -128,7 +132,6 @@ img {
 
 .main {
   margin-top: 10px;
-  background-color: #3f3d56;
 }
 
 .main-container {
@@ -139,7 +142,6 @@ img {
   width: 80%;
   margin: 0 auto;
   height: 90vh;
-  background-color: #3f3d56;
 }
 
 .main-content {
@@ -274,4 +276,17 @@ img {
   transition: all 0.35s;
   outline: none;
   background-color: #ed3b4b;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ed3b4b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #bf303d;
 }

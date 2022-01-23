@@ -54,7 +54,7 @@ class AddProject extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-8 m-auto">
-                <h5 className="display-4 text-center">Create Project Form</h5>
+                <h5 className="display-4 text-center">Update Project Form</h5>
                 <hr />
                 <form className="form-main" onSubmit={this.onSubmit}>
                   <div

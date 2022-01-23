@@ -18,8 +18,10 @@ class ProjectItem extends Component {
           </div>
           <div className="dash-board-button">
             <DashBtnLink to="/projectBoard">Project Board</DashBtnLink>
-            <DashBtnLink to="/updateBoard">Update Project</DashBtnLink>
-            <DashBtnLink to="/updateBoard">Delete Project</DashBtnLink>
+            <DashBtnLink to={`/updateProject/${project.projectIdentifier}`}>
+              Update Project
+            </DashBtnLink>
+            <DashBtnLink to="/DeleteBoard">Delete Project</DashBtnLink>
           </div>
         </div>
         <hr style={{ color: "#fff" }} />

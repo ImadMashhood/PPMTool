@@ -18,3 +18,24 @@ export const CreateProjectBtn = styled(Link)`
     color: #fff;
   }
 `;
+
+export const GetStarted = styled(Link)`
+  font-size: 1rem;
+  background-color: #ed3b4b;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #4c3b92;
+    color: #fff;
+  }
+`;
