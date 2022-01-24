@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Nav, NavMenu, DashBtn, DashBtnLink } from "../Layout/HeaderElements";
+import { DashBtnLink } from "../Layout/HeaderElements";
 
 class ProjectItem extends Component {
   render() {
