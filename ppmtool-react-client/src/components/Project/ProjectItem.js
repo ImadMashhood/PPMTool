@@ -1,7 +1,14 @@
 import React, { Component } from "react";
-import { DashBtnLink } from "../Layout/HeaderElements";
+import { DashBtnLink, DashDelBtnLink } from "../Layout/HeaderElements";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { deleteProject } from "../../actions/projectActions";
 class ProjectItem extends Component {
+  onDeleteClick = (id) => {
+    this.props.deleteProject(id);
+  };
+
   render() {
     var { project } = this.props;
     return (
@@ -21,7 +28,11 @@ class ProjectItem extends Component {
             <DashBtnLink to={`/updateProject/${project.projectIdentifier}`}>
               Update Project
             </DashBtnLink>
-            <DashBtnLink to="/DeleteBoard">Delete Project</DashBtnLink>
+            <DashDelBtnLink
+              onClick={this.onDeleteClick.bind(this, project.projectIdentifier)}
+            >
+              Delete Project
+            </DashDelBtnLink>
           </div>
         </div>
         <hr style={{ color: "#fff" }} />
@@ -30,4 +41,8 @@ class ProjectItem extends Component {
   }
 }
 
-export default ProjectItem;
+ProjectItem.propTypes = {
+  deleteProject: PropTypes.func.isRequired,
+};
+
+export default connect(null, { deleteProject })(ProjectItem);

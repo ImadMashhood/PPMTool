@@ -119,3 +119,21 @@ export const DashBtnLink = styled(Link)`
     color: #fff;
   }
 `;
+
+export const DashDelBtnLink = styled.button`
+  border-radius: 4px;
+  background: #ed3b4b;
+  text-decoration: none;
+  padding: 10px 22px;
+  margin-left: 30px;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #4c3b92;
+    color: #fff;
+  }
+`;
