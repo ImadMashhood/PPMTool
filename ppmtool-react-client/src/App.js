@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
 import Header from "./components/Header";
 import AddProject from "./components/Project/AddProject";
@@ -19,12 +19,16 @@ function App() {
         <AnimatePresence exitBeforeEnter>
           <Router location={location} key={location.pathname}>
             <Header />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/addProject" element={<AddProject />} />
-              <Route path="/updateProject/:id" element={<UpdateProject />} />
-            </Routes>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/dashboard" component={Dashboard} />
+              <Route exact path="/addProject" component={AddProject} />
+              <Route
+                exact
+                path="/updateProject/:id"
+                component={UpdateProject}
+              />
+            </Switch>
           </Router>
         </AnimatePresence>
       </Provider>

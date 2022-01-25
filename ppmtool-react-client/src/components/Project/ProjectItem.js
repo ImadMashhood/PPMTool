@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { DashBtnLink } from "../Layout/HeaderElements";
-
+import { Link } from "react-router-dom";
 class ProjectItem extends Component {
   render() {
-    const { project } = this.props;
+    var { project } = this.props;
     return (
       <div className="container">
         <div className="card-body">

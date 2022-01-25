@@ -1,7 +1,7 @@
 import React, { Component } from "react";
+import { getProject } from "../../actions/projectActions";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { getProject } from "../../actions/projectActions";
 import classnames from "classnames";
 import { motion } from "framer-motion";
 
