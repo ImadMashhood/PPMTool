@@ -1,6 +1,7 @@
 package com.hcl.ppmtool.web;
 
 import com.hcl.ppmtool.domain.Project;
+import com.hcl.ppmtool.domain.ProjectTask;
 import com.hcl.ppmtool.services.MapValidationErrorService;
 import com.hcl.ppmtool.services.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
+import javax.naming.Binding;
 import javax.validation.Valid;
 import java.util.HashMap;
 import java.util.List;
@@ -53,4 +55,6 @@ public class ProjectController {
         projectService.deleteProjectByIdentifier(projectId);
         return new ResponseEntity<String>("Project '"+projectId+"' was succesfully deleted", HttpStatus.OK);
     }
+
+
 }
