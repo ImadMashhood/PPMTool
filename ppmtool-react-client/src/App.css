@@ -16,12 +16,12 @@ img {
 }
 
 .navbar {
-  background-color: #2f2e41;
+  background-color: #242526;
 }
 
 .container {
   margin-top: 20px;
-  background-color: #2f2e41;
+  background-color: #242526;
 }
 
 .display-4 {
@@ -32,7 +32,7 @@ img {
 }
 
 .card-body {
-  background-color: #2f2e41;
+  background-color: #242526;
   color: white;
   border-radius: 4px;
 }
@@ -220,7 +220,7 @@ img {
     width: 90vh;
     margin: 0 auto;
     height: 90vh;
-    background-color: #3f3d56;
+    background-color: #242526;
   }
 
   .main-content {
