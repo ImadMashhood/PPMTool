@@ -16,12 +16,12 @@ class home extends Component {
             <div className="main-container">
               <div className="main-content">
                 <h1>Boost You Productivity</h1>
-                <p>
+                <p style={{ color: "#e4e6eb" }}>
                   Omega Project Manager helps manage your projects, efficiently,
                   effectively and consistently. Join the Omega team and see your
                   project work life balance change
                 </p>
-                <GetStarted to="/signup">Get Started</GetStarted>
+                <GetStarted to="/signin">Get Started</GetStarted>
               </div>
               <div className="main-img-container">
                 <img src={ImgWorking} alt="Logo" id="main-img" />;

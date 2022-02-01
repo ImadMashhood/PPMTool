@@ -12,7 +12,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-  color: #fff;
+  color: #e4e6eb;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -28,7 +28,7 @@ export const NavLink = styled(Link)`
 `;
 
 export const NavImg = styled(Link)`
-  color: #fff;
+  color: #e4e6eb;
   display: flex;
   width: 80px;
   height: 80px;
@@ -44,7 +44,7 @@ export const NavImg = styled(Link)`
 
 export const Bars = styled(FaBars)`
   display: none;
-  color: #fff;
+  color: #e4e6eb;
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
@@ -79,7 +79,7 @@ export const NavBtnLink = styled(Link)`
   border-radius: 4px;
   background: #ed3b4b;
   padding: 10px 22px;
-  color: #fff;
+  color: #e4e6eb;
   outline: none;
   border: none;
   cursor: pointer;
@@ -89,7 +89,7 @@ export const NavBtnLink = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #4c3b92;
-    color: #fff;
+    color: #e4e6eb;
   }
 `;
 
@@ -108,7 +108,7 @@ export const DashBtnLink = styled(Link)`
   text-decoration: none;
   padding: 10px 22px;
   margin-left: 30px;
-  color: #fff;
+  color: #e4e6eb;
   outline: none;
   border: none;
   cursor: pointer;
@@ -116,7 +116,7 @@ export const DashBtnLink = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #4c3b92;
-    color: #fff;
+    color: #e4e6eb;
   }
 `;
 
@@ -126,7 +126,7 @@ export const DashDelBtnLink = styled.button`
   text-decoration: none;
   padding: 10px 22px;
   margin-left: 30px;
-  color: #fff;
+  color: #e4e6eb;
   outline: none;
   border: none;
   cursor: pointer;
@@ -134,6 +134,6 @@ export const DashDelBtnLink = styled.button`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #4c3b92;
-    color: #fff;
+    color: #e4e6eb;
   }
 `;

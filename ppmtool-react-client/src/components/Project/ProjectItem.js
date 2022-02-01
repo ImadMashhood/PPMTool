@@ -35,7 +35,7 @@ class ProjectItem extends Component {
             </DashDelBtnLink>
           </div>
         </div>
-        <hr style={{ color: "#fff" }} />
+        <hr style={{ color: "#e4e6eb" }} />
       </div>
     );
   }

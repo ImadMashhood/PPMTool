@@ -116,7 +116,7 @@ class AddProject extends Component {
                       </div>
                     )}
                   </div>
-                  <h6 style={{ color: "#fff" }}>Start Date</h6>
+                  <h6 style={{ color: "e4e6eb" }}>Start Date</h6>
                   <div
                     className="form-group"
                     style={{ "margin-bottom": "20px" }}
@@ -136,7 +136,7 @@ class AddProject extends Component {
                       </div>
                     )}
                   </div>
-                  <h6 style={{ color: "#fff" }}>Estimated End Date</h6>
+                  <h6 style={{ color: "#e4e6eb" }}>Estimated End Date</h6>
                   <div className="form-group">
                     <input
                       type="date"

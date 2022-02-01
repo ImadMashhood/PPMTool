@@ -78,7 +78,7 @@ class UpdateProject extends Component {
             <div className="row">
               <div className="col-md-8 m-auto">
                 <h5 className="display-4 text-center">Update Project Form</h5>
-                <hr style={{ color: "#fff" }} />
+                <hr style={{ color: "#e4e6eb" }} />
                 <form className="form-main" onSubmit={this.onSubmit}>
                   <div
                     className="form-group"
@@ -140,7 +140,7 @@ class UpdateProject extends Component {
                       </div>
                     )}
                   </div>
-                  <h6 style={{ color: "#fff" }}>Start Date</h6>
+                  <h6 style={{ color: "#e4e6eb" }}>Start Date</h6>
                   <div
                     className="form-group"
                     style={{ "margin-bottom": "20px" }}
@@ -160,7 +160,7 @@ class UpdateProject extends Component {
                       </div>
                     )}
                   </div>
-                  <h6 style={{ color: "#fff" }}>Estimated End Date</h6>
+                  <h6 style={{ color: "#e4e6eb" }}>Estimated End Date</h6>
                   <div className="form-group">
                     <input
                       type="date"

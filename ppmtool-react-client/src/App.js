@@ -10,6 +10,7 @@ import store from "./store";
 import { AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import UpdateProject from "./components/Project/UpdateProject";
+import AccountBox from "./components/accountBox/index";
 
 function App() {
   const location = useLocation;
@@ -28,6 +29,7 @@ function App() {
                 path="/updateProject/:id"
                 component={UpdateProject}
               />
+              <Route exact path={"/signin"} component={AccountBox} />
             </Switch>
           </Router>
         </AnimatePresence>

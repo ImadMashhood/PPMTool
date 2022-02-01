@@ -26,14 +26,14 @@ img {
 
 .display-4 {
   margin-top: 40px;
-  color: white;
+  color: #e4e6eb;
   justify-self: center;
   align-self: center;
 }
 
 .card-body {
   background-color: #242526;
-  color: white;
+  color: #e4e6eb;
   border-radius: 4px;
 }
 
@@ -42,7 +42,7 @@ img {
 }
 
 .project-board {
-  color: white;
+  color: #e4e6eb;
   background-color: #01baef;
   padding: 10px 22px;
   outline: none;
@@ -53,18 +53,18 @@ img {
 }
 
 .list-group-item.update {
-  color: white;
+  color: #e4e6eb;
   background-color: #ed3b4b;
 }
 
 .list-group-item.board {
-  color: white;
+  color: #e4e6eb;
   background-color: #ed3b4b;
 }
 
 .list-group-item.delete:hover {
   transition: all 0.2s ease-in-out;
-  color: white;
+  color: #e4e6eb;
   background-color: #1a192e5d;
 }
 
@@ -147,7 +147,7 @@ img {
 .main-content {
   justify-self: start;
   margin-left: 20px;
-  color: white;
+  color: #e4e6eb;
   width: 80%;
 }
 
@@ -167,7 +167,7 @@ img {
   border: none;
   border-radius: 4px;
   text-align: center;
-  color: white;
+  color: #e4e6eb;
   margin-top: 2rem;
   cursor: pointer;
   position: relative;
@@ -178,12 +178,12 @@ img {
 .main-btn a {
   position: relative;
   z-index: 2;
-  color: white;
+  color: #e4e6eb;
   text-decoration: none;
 }
 
 .main-btn a:hover {
-  color: white;
+  color: #e4e6eb;
 }
 
 .main-btn:after {
@@ -198,7 +198,7 @@ img {
 }
 
 .main-btn:hover {
-  color: white;
+  color: #e4e6eb;
   background: #4c3b92;
 }
 
@@ -225,7 +225,7 @@ img {
 
   .main-content {
     justify-self: center;
-    color: white;
+    color: #e4e6eb;
     width: 80%;
     margin: 0;
   }

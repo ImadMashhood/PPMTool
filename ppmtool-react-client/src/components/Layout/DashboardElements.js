@@ -5,7 +5,7 @@ export const CreateProjectBtn = styled(Link)`
   border-radius: 4px;
   background: #ed3b4b;
   padding: 10px 22px;
-  color: #fff;
+  color: #e4e6eb;
   outline: none;
   border: none;
   cursor: pointer;
@@ -15,7 +15,7 @@ export const CreateProjectBtn = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #4c3b92;
-    color: #fff;
+    color: #e4e6eb;
   }
 `;
 
@@ -26,7 +26,7 @@ export const GetStarted = styled(Link)`
   border: none;
   border-radius: 4px;
   text-align: center;
-  color: white;
+  color: #e4e6eb;
   margin-top: 2rem;
   cursor: pointer;
   position: relative;
@@ -36,6 +36,6 @@ export const GetStarted = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #4c3b92;
-    color: #fff;
+    color: #e4e6eb;
   }
 `;

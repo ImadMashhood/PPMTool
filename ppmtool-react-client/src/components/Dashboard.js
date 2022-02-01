@@ -28,7 +28,7 @@ class Dashboard extends Component {
                 <CreateProjectBtn to="/addProject">
                   Create Project
                 </CreateProjectBtn>
-                <hr style={{ color: "#fff" }} />
+                <hr style={{ color: "#e4e6eb" }} />
                 {projects.map((project) => (
                   <ProjectItem key={project.id} project={project} />
                 ))}
