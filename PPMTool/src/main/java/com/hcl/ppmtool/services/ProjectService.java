@@ -9,6 +9,7 @@ import com.hcl.ppmtool.domain.Backlog;
 import com.hcl.ppmtool.domain.Project;
 import com.hcl.ppmtool.domain.User;
 import com.hcl.ppmtool.exceptions.ProjectIdException;
+import com.hcl.ppmtool.exceptions.ProjectNotFoundException;
 import com.hcl.ppmtool.repositories.BacklogRepository;
 import com.hcl.ppmtool.repositories.ProjectRepository;
 import com.hcl.ppmtool.repositories.UserRepository;
@@ -48,25 +49,25 @@ public class ProjectService {
     }
 
     //Used for finding projects by ID
-    public Project findProjectByIdentifier(String projectId){
+    public Project findProjectByIdentifier(String projectId, String username){
         Project project = projectRepository.findByProjectIdentifier(projectId.toUpperCase());
         if(project == null){
             throw new ProjectIdException("Project ID does not exists");
         }
+        if(!project.getProjectLeader().equals(username)) {
+        	throw new ProjectNotFoundException("Project not found in your account");
+        }
+        
         return project;
     }
 
     //Used for finding all projects
-    public Iterable<Project> findAllProjects(){
-        return projectRepository.findAll();
+    public Iterable<Project> findAllProjects(String username){
+        return projectRepository.findAllByProjectLeader(username);
     }
 
     //Used to delete objects
-    public void deleteProjectByIdentifier(String projectId){
-        Project project = findProjectByIdentifier(projectId.toUpperCase(Locale.ROOT));
-        if(project == null){
-            throw new ProjectIdException("Can't delete Project ID does not exists");
-        }
-        projectRepository.delete(project);
+    public void deleteProjectByIdentifier(String projectId, String username){
+        projectRepository.delete(findProjectByIdentifier(projectId, username));
     }
 }
