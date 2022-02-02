@@ -3,6 +3,12 @@ package com.hcl.ppmtool.payload;
 public class JWTLoginSuccessResponse {
 	private boolean success;
 	private String token;
+	
+	public JWTLoginSuccessResponse(boolean success, String token) {
+		super();
+		this.success = success;
+		this.token = token;
+	}
 	public boolean isSuccess() {
 		return success;
 	}
