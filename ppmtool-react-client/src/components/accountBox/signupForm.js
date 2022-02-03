@@ -51,7 +51,7 @@ class Register extends Component {
               <h1 className="display-4 text-center">Sign Up</h1>
               <p className="lead text-center">Create your Account</p>
               <form onSubmit={this.onSubmit}>
-                <div className="form-group">
+                <div className="form-group" style={{ "margin-bottom": "20px" }}>
                   <input
                     type="text"
                     className={classnames("form-control form-control-lg", {
@@ -66,7 +66,7 @@ class Register extends Component {
                     <div className="invalid-feedback">{errors.fullName}</div>
                   )}
                 </div>
-                <div className="form-group">
+                <div className="form-group" style={{ "margin-bottom": "20px" }}>
                   <input
                     type="text"
                     className={classnames("form-control form-control-lg", {
@@ -81,7 +81,7 @@ class Register extends Component {
                     <div className="invalid-feedback">{errors.username}</div>
                   )}
                 </div>
-                <div className="form-group">
+                <div className="form-group" style={{ "margin-bottom": "20px" }}>
                   <input
                     type="password"
                     className={classnames("form-control form-control-lg", {
@@ -96,7 +96,7 @@ class Register extends Component {
                     <div className="invalid-feedback">{errors.password}</div>
                   )}
                 </div>
-                <div className="form-group">
+                <div className="form-group" style={{ "margin-bottom": "20px" }}>
                   <input
                     type="password"
                     className={classnames("form-control form-control-lg", {
@@ -113,7 +113,11 @@ class Register extends Component {
                     </div>
                   )}
                 </div>
-                <input type="submit" className="btn btn-info btn-block mt-4" />
+                <input
+                  type="submit"
+                  className="btn btn-info btn-block mt-4"
+                  style={{ "margin-bottom": "20px" }}
+                />
               </form>
             </div>
           </div>

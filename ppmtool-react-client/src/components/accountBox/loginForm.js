@@ -9,7 +9,7 @@ class Login extends Component {
             <div className="col-md-8 m-auto">
               <h1 className="display-4 text-center">Log In</h1>
               <form action="dashboard.html">
-                <div className="form-group">
+                <div className="form-group" style={{ "margin-bottom": "20px" }}>
                   <input
                     type="email"
                     className="form-control form-control-lg"
@@ -17,7 +17,7 @@ class Login extends Component {
                     name="email"
                   />
                 </div>
-                <div className="form-group">
+                <div className="form-group" style={{ "margin-bottom": "20px" }}>
                   <input
                     type="password"
                     className="form-control form-control-lg"
