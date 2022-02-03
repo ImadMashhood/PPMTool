@@ -4,7 +4,7 @@ import { GET_ERRORS } from "./types";
 export const createNewUser = (newUser, history) => async (dispatch) => {
   try {
     await axios.post("/api/users/register", newUser);
-    history.push("/login");
+    history.push("/src/components/accountBox/loginForm.js");
     dispatch({
       type: GET_ERRORS,
       payload: {},

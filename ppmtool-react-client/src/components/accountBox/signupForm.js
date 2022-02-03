@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { CreateProjectBtn } from "../Layout/DashboardElements";
 import { createNewUser } from "../../actions/securityActions";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
@@ -52,7 +51,7 @@ class Register extends Component {
               <h1 className="display-4 text-center">Sign Up</h1>
               <p className="lead text-center">Create your Account</p>
               <form onSubmit={this.onSubmit}>
-                <div className="form-group" style={{ "margin-bottom": "20px" }}>
+                <div className="form-group">
                   <input
                     type="text"
                     className={classnames("form-control form-control-lg", {
@@ -67,7 +66,7 @@ class Register extends Component {
                     <div className="invalid-feedback">{errors.fullName}</div>
                   )}
                 </div>
-                <div className="form-group" style={{ "margin-bottom": "20px" }}>
+                <div className="form-group">
                   <input
                     type="text"
                     className={classnames("form-control form-control-lg", {
@@ -82,7 +81,7 @@ class Register extends Component {
                     <div className="invalid-feedback">{errors.username}</div>
                   )}
                 </div>
-                <div className="form-group" style={{ "margin-bottom": "20px" }}>
+                <div className="form-group">
                   <input
                     type="password"
                     className={classnames("form-control form-control-lg", {
@@ -97,7 +96,7 @@ class Register extends Component {
                     <div className="invalid-feedback">{errors.password}</div>
                   )}
                 </div>
-                <div className="form-group" style={{ "margin-bottom": "20px" }}>
+                <div className="form-group">
                   <input
                     type="password"
                     className={classnames("form-control form-control-lg", {
@@ -114,9 +113,7 @@ class Register extends Component {
                     </div>
                   )}
                 </div>
-                <CreateProjectBtn type="submit">
-                  Create Project
-                </CreateProjectBtn>
+                <input type="submit" className="btn btn-info btn-block mt-4" />
               </form>
             </div>
           </div>
@@ -134,5 +131,4 @@ Register.propTypes = {
 const mapStateToProps = (state) => ({
   errors: state.errors,
 });
-
 export default connect(mapStateToProps, { createNewUser })(Register);

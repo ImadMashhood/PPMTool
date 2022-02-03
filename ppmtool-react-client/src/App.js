@@ -10,8 +10,8 @@ import store from "./store";
 import { AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import UpdateProject from "./components/Project/UpdateProject";
-import signupForm from "./components/accountBox/signupForm";
 import Login from "./components/accountBox/loginForm";
+import signupForm from "./components/accountBox/signupForm";
 
 function App() {
   const location = useLocation;
