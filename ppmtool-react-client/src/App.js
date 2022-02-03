@@ -12,6 +12,26 @@ import { useLocation } from "react-router-dom";
 import UpdateProject from "./components/Project/UpdateProject";
 import Login from "./components/accountBox/loginForm";
 import signupForm from "./components/accountBox/signupForm";
+import jwt_decode from "jwt-decode";
+import setJWTToken from "./securityUtils/setJWTToken";
+import { SET_CURRENT_USER } from "./actions/types";
+
+const jwtToken = localStorage.jwtToken;
+
+if (jwtToken) {
+  setJWTToken(jwtToken);
+  const decoded_jwtToken = jwt_decode(jwtToken);
+  store.dispatch({
+    type: SET_CURRENT_USER,
+    payload: decoded_jwtToken,
+  });
+
+  const currentTime = Date.now() / 1000;
+  if (decoded_jwtToken.exp < currentTime) {
+    //handle logout
+    //window.location.href = "/";
+  }
+}
 
 function App() {
   const location = useLocation;
