@@ -10,7 +10,8 @@ import store from "./store";
 import { AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import UpdateProject from "./components/Project/UpdateProject";
-import AccountBox from "./components/accountBox/index";
+import signupForm from "./components/accountBox/signupForm";
+import Login from "./components/accountBox/loginForm";
 
 function App() {
   const location = useLocation;
@@ -29,7 +30,8 @@ function App() {
                 path="/updateProject/:id"
                 component={UpdateProject}
               />
-              <Route exact path={"/signin"} component={AccountBox} />
+              <Route exact path={"/signin"} component={Login} />
+              <Route exact path={"/signup"} component={signupForm} />
             </Switch>
           </Router>
         </AnimatePresence>

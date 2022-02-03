@@ -1,35 +1,38 @@
-import React, { useContext } from "react";
-import {
-  BoldLink,
-  BoxContainer,
-  FormContainer,
-  Input,
-  MutedLink,
-  SubmitButton,
-} from "./common";
-import { Marginer } from "../marginer";
-import { AccountContext } from "./accountContext";
+import React, { Component } from "react";
 
-export function LoginForm(props) {
-  const { switchToSignup } = useContext(AccountContext);
-
-  return (
-    <BoxContainer>
-      <FormContainer>
-        <Input type="email" placeholder="Email" />
-        <Input type="password" placeholder="Password" />
-      </FormContainer>
-      <Marginer direction="vertical" margin={10} />
-      <MutedLink href="#">Forget your password?</MutedLink>
-      <Marginer direction="vertical" margin="1.6em" />
-      <SubmitButton type="submit">Signin</SubmitButton>
-      <Marginer direction="vertical" margin="1em" />
-      <MutedLink href="#">
-        Don't have an accoun?{" "}
-        <BoldLink href="#" onClick={switchToSignup}>
-          Signup
-        </BoldLink>
-      </MutedLink>
-    </BoxContainer>
-  );
+class Login extends Component {
+  render() {
+    return (
+      <div className="login">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8 m-auto">
+              <h1 className="display-4 text-center">Log In</h1>
+              <form action="dashboard.html">
+                <div className="form-group">
+                  <input
+                    type="email"
+                    className="form-control form-control-lg"
+                    placeholder="Email Address"
+                    name="email"
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    type="password"
+                    className="form-control form-control-lg"
+                    placeholder="Password"
+                    name="password"
+                  />
+                </div>
+                <input type="submit" className="btn btn-info btn-block mt-4" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
+
+export default Login;

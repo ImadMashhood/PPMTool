@@ -21,7 +21,7 @@ class home extends Component {
                   effectively and consistently. Join the Omega team and see your
                   project work life balance change
                 </p>
-                <GetStarted to="/signin">Get Started</GetStarted>
+                <GetStarted to="/signup">Get Started</GetStarted>
               </div>
               <div className="main-img-container">
                 <img src={ImgWorking} alt="Logo" id="main-img" />;
