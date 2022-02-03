@@ -17,7 +17,7 @@ class Login extends Component {
                     name="email"
                   />
                 </div>
-                <div className="form-group" style={{ "margin-bottom": "20px" }}>
+                <div className="form-group">
                   <input
                     type="password"
                     className="form-control form-control-lg"
@@ -25,7 +25,11 @@ class Login extends Component {
                     name="password"
                   />
                 </div>
-                <input type="submit" className="btn btn-info btn-block mt-4" />
+                <input
+                  type="submit"
+                  className="btn btn-info btn-block mt-4"
+                  style={{ "margin-bottom": "20px" }}
+                />
               </form>
             </div>
           </div>

@@ -96,7 +96,7 @@ class Register extends Component {
                     <div className="invalid-feedback">{errors.password}</div>
                   )}
                 </div>
-                <div className="form-group" style={{ "margin-bottom": "20px" }}>
+                <div className="form-group">
                   <input
                     type="password"
                     className={classnames("form-control form-control-lg", {
