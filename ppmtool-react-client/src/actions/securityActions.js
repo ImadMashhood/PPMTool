@@ -23,7 +23,7 @@ export const login = (LoginRequest) => async (dispatch) => {
   try {
     // post => Login Request
     const res = await axios.post("/api/users/login", LoginRequest);
-    // extract token from res.data
+    // extract token from res.datao,
     const { token } = res.data;
     // store the token in the localStorage
     localStorage.setItem("jwtToken", token);
