@@ -2,8 +2,16 @@ import React, { Component } from "react";
 import ImgWorking from "../../images/workingLate.svg";
 import { motion } from "framer-motion";
 import { GetStarted } from "../Layout/DashboardElements";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 class home extends Component {
+  componentDidMount() {
+    if (this.props.security.validToken) {
+      this.props.history.push("/dashboard");
+    }
+  }
+
   render() {
     return (
       <>
@@ -33,4 +41,13 @@ class home extends Component {
     );
   }
 }
-export default home;
+
+home.propTypes = {
+  security: PropTypes.object.isRequired,
+};
+
+const mapStateToProps = (state) => ({
+  security: state.security,
+});
+
+export default connect(mapStateToProps)(home);
