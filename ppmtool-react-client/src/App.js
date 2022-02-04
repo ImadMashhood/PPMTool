@@ -16,6 +16,7 @@ import jwt_decode from "jwt-decode";
 import setJWTToken from "./securityUtils/setJWTToken";
 import { SET_CURRENT_USER } from "./actions/types";
 import { logout } from "./actions/securityActions";
+import SecureRoute from "./securityUtils.js/SecureRoute";
 
 const jwtToken = localStorage.jwtToken;
 
@@ -44,15 +45,18 @@ function App() {
             <Header />
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/dashboard" component={Dashboard} />
-              <Route exact path="/addProject" component={AddProject} />
-              <Route
-                exact
-                path="/updateProject/:id"
-                component={UpdateProject}
-              />
               <Route exact path={"/signin"} component={Login} />
               <Route exact path={"/signup"} component={signupForm} />
+
+              <Switch>
+                <SecureRoute exact path="/dashboard" component={Dashboard} />
+                <SecureRoute exact path="/addProject" component={AddProject} />
+                <SecureRoute
+                  exact
+                  path="/updateProject/:id"
+                  component={UpdateProject}
+                />
+              </Switch>
             </Switch>
           </Router>
         </AnimatePresence>
