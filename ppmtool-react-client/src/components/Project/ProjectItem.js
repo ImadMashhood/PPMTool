@@ -24,7 +24,9 @@ class ProjectItem extends Component {
             </div>
           </div>
           <div className="dash-board-button">
-            <DashBtnLink to="/projectBoard">Project Board</DashBtnLink>
+            <DashBtnLink to={`/projectBoard/${project.projectIdentifier}`}>
+              Project Board
+            </DashBtnLink>
             <DashBtnLink to={`/updateProject/${project.projectIdentifier}`}>
               Update Project
             </DashBtnLink>
