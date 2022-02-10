@@ -101,11 +101,13 @@ class UpdateProjectTask extends Component {
               <Link
                 to={`/projectBoard/${this.state.projectIdentifier}`}
                 className="btn btn-light"
+                style={{ "margin-bottom": "20px" }}
+                style={{ "margin-top": "20px" }}
               >
                 Back to Project Board
               </Link>
               <h4 className="display-4 text-center">Update Project Task</h4>
-              <p className="lead text-center">
+              <p className="lead text-center" style={{ color: "white" }}>
                 Project Name: {this.state.projectIdentifier} | Project Task ID:{" "}
                 {this.state.projectSequence}{" "}
               </p>
@@ -120,6 +122,7 @@ class UpdateProjectTask extends Component {
                     placeholder="Project Task summary"
                     value={this.state.summary}
                     onChange={this.onChange}
+                    style={{ "margin-bottom": "20px" }}
                   />
                   {errors.summary && (
                     <div className="invalid-feedback">{errors.summary}</div>
@@ -132,9 +135,10 @@ class UpdateProjectTask extends Component {
                     name="acceptanceCriteria"
                     value={this.state.acceptanceCriteria}
                     onChange={this.onChange}
+                    style={{ "margin-bottom": "20px" }}
                   />
                 </div>
-                <h6>Due Date</h6>
+                <h6 style={{ color: "white" }}>Due Date</h6>
                 <div className="form-group">
                   <input
                     type="date"
@@ -142,6 +146,7 @@ class UpdateProjectTask extends Component {
                     name="dueDate"
                     value={this.state.dueDate}
                     onChange={this.onChange}
+                    style={{ "margin-bottom": "20px" }}
                   />
                 </div>
                 <div className="form-group">
@@ -150,6 +155,7 @@ class UpdateProjectTask extends Component {
                     name="priority"
                     value={this.state.priority}
                     onChange={this.onChange}
+                    style={{ "margin-bottom": "20px" }}
                   >
                     <option value={0}>Select Priority</option>
                     <option value={1}>High</option>
@@ -175,6 +181,7 @@ class UpdateProjectTask extends Component {
                 <input
                   type="submit"
                   className="btn btn-primary btn-block mt-4"
+                  style={{ "margin-bottom": "20px" }}
                 />
               </form>
             </div>
